@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react'
 import { useSidebar } from '../../Context/SidebarContext';
 import navItems from '../../Data/NavItems.json'
@@ -17,8 +18,8 @@ const iconMap = {
 };
 
 const Sidebar = () => {
-    const { isSidebarOpen, toggleSidebar } = useSidebar(false);
     const [openDropdown, setOpenDropdown] = useState(null);
+    const { isSidebarOpen, toggleSidebar } = useSidebar()
     const location = useLocation()
 
     const toggleDropdown = (index) => {

@@ -46,7 +46,7 @@ function App() {
           <Sidebar />
           <main className='lg:ltr:pl-[270px] lg:rtl:pr-[270px] transition-all duration-300'>
             <Header />
-            <div className='p-30px'>
+            <div className='p-10px lg:p-30px'>
               <Routes>
                 <Route path='/' Component={Classic} />
                 <Route path='/Minimal' Component={Minimal} />
