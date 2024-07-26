@@ -17,7 +17,7 @@ const iconMap = {
 };
 
 const Sidebar = () => {
-    const { isSidebarOpen, toggleSidebar } = useSidebar();
+    const { isSidebarOpen, toggleSidebar } = useSidebar(false);
     const [openDropdown, setOpenDropdown] = useState(null);
     const location = useLocation()
 

@@ -16,7 +16,7 @@ const Header = () => {
     }
 
     return (
-        <div className='p-30px mx-30px my-[27px] flex justify-between items-center'>
+        <div className='lg:p-30px mx-30px my-[27px] flex justify-between items-center'>
             <div className='flex'>
                 <SidebarButton />
                 <SearchInput />
