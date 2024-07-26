@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import './App.css';
 import Sidebar from './Components/Sidebar/Sidebar';
 import Header from './Containers/Header/Header';
@@ -38,8 +38,9 @@ function App() {
   }, [i18n]);
 
 
+
   return (
-    <BrowserRouter>
+    <Router>
       <div className="App">
         <SidebarProvider>
           <Sidebar />
@@ -62,7 +63,7 @@ function App() {
           </main>
         </SidebarProvider>
       </div>
-    </BrowserRouter>
+    </Router>
 
   );
 }
