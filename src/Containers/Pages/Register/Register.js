@@ -41,7 +41,7 @@ const Register = () => {
                         <label className='ltr:pl-4 rtl:pr-4 text-[#7e7172] cursor-pointer' htmlFor='Check_box'>{t("KeepMeUpToDate")}</label>
                     </div>
                     <button className='mt-[25px] bg-[#3b76ef] text-white hover:bg-white hover:text-[#3b76ef] w-full h-10 rounded border border-[#3b76ef] transition duration-500'>{t("SignUp")}</button>
-                    <p className='mt-[25px] text-[16px] font-medium text-[#707070]'>{t("HaveAnAccount")} <Link className='text-[#4d4f5c]' to='/Register'>{t("Login")}</Link></p>
+                    <p className='mt-[25px] text-[16px] font-medium text-[#707070]'>{t("HaveAnAccount")} <Link className='text-[#4d4f5c]' to='/Login'>{t("Login")}</Link></p>
                 </div>
             </div>
         </div>

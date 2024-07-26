@@ -1,11 +1,9 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react';
 import { useSidebar } from '../../Context/SidebarContext';
-import navItems from '../../Data/NavItems.json'
+import navItems from '../../Data/NavItems.json';
 import { Boxes, GraphUp, HouseFill, Newspaper, Palette, PersonLinesFill, X } from 'react-bootstrap-icons';
 import NavDropdownButton from '../DropdownButtons/NavDropdownButton.js';
-import Logo_img from '../../Data/Images/logo.png'
-import { useLocation } from 'react-router';
+import Logo_img from '../../Data/Images/logo.png';
 
 const iconMap = {
     Dashboard: <HouseFill size={20} />,
@@ -19,16 +17,11 @@ const iconMap = {
 
 const Sidebar = () => {
     const [openDropdown, setOpenDropdown] = useState(null);
-    const { isSidebarOpen, toggleSidebar } = useSidebar()
-    const location = useLocation()
+    const { isSidebarOpen, toggleSidebar } = useSidebar();
 
     const toggleDropdown = (index) => {
         setOpenDropdown(openDropdown === index ? null : index);
     };
-
-    useEffect(() => {
-        toggleSidebar(false)
-    }, [location.pathname])
 
     return (
         <nav className={`z-[9] w-[270px] h-screen fixed rtl:right-0 left-0 top-0 bg-white ${isSidebarOpen ? 'translate-x-0 shadow-sidebar' : '-translate-x-full rtl:translate-x-full'} lg:shadow-none lg:rtl:translate-x-0 lg:translate-x-0 lg:visible transition-transform duration-300 ease-in-out`}>
@@ -54,4 +47,4 @@ const Sidebar = () => {
     );
 };
 
-export default Sidebar
+export default Sidebar;
