@@ -47,7 +47,7 @@ function App() {
             <Header />
             <div className='p-30px'>
               <Routes>
-                <Route path='/Classic' index Component={Classic} />
+                <Route path='/' Component={Classic} />
                 <Route path='/Minimal' Component={Minimal} />
                 <Route path='/Login' Component={Login} />
                 <Route path='/Register' Component={Register} />

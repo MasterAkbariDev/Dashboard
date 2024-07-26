@@ -4,7 +4,7 @@
     "subButtons": [
       {
         "name": "Classic",
-        "path": "/Classic"
+        "path": "/"
       },
       {
         "name": "Minimal",
