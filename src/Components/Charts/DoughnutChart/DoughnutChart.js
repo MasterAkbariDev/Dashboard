@@ -1,4 +1,3 @@
-// DoughnutChart.js
 import React from 'react';
 import { Doughnut } from 'react-chartjs-2';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
@@ -28,7 +27,7 @@ const DoughnutChart = ({ percentage, label }) => {
         enabled: true,
       },
     },
-    cutout: '70%', // Adjust cutout to make the ring thinner
+    cutout: '70%',
   };
 
   return (
