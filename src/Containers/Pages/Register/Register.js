@@ -37,7 +37,7 @@ const Register = () => {
                         <Input value={password} setValue={setPassword} placeholder={t("Password")} />
                     </div>
                     <div className='flex items-center justify-start'>
-                        <input type="checkbox" id='Check_box' class="ui-checkbox" />
+                        <input type="checkbox" id='Check_box' className="ui-checkbox" />
                         <label className='ltr:pl-4 rtl:pr-4 text-[#7e7172] cursor-pointer' htmlFor='Check_box'>{t("KeepMeUpToDate")}</label>
                     </div>
                     <button className='mt-[25px] bg-[#3b76ef] text-white hover:bg-white hover:text-[#3b76ef] w-full h-10 rounded border border-[#3b76ef] transition duration-500'>{t("SignUp")}</button>

@@ -10,6 +10,7 @@ import {
   Title,
   Tooltip,
   Legend,
+  LineController
 } from 'chart.js';
 
 ChartJS.register(
@@ -20,7 +21,8 @@ ChartJS.register(
   LineElement,
   Title,
   Tooltip,
-  Legend
+  Legend,
+  LineController
 );
 
 const MixedChart = ({ title, barData, lineData, labels }) => {
