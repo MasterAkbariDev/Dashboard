@@ -1,0 +1,49 @@
+[
+  {
+    "name": "Dashboard",
+    "subButtons": [
+      {
+        "name": "Classic",
+        "path": "/"
+      },
+      {
+        "name": "Minimal",
+        "path": "/Minimal"
+      }
+    ]
+  },
+  {
+    "name": "Pages",
+    "subButtons": [
+      {
+        "name": "Login",
+        "path": "/Login"
+      },
+      {
+        "name": "SignUp",
+        "path": "/Register"
+      },
+      {
+        "name": "ForgetPassword",
+        "path": "/ForgetPassword"
+      }
+    ]
+  },
+  {
+    "name": "Applications",
+    "subButtons": [
+      {
+        "name": "MailBox",
+        "path": "/Applications/MailBox"
+      },
+      {
+        "name": "Chat",
+        "path": "/Applications/Chat"
+      },
+      {
+        "name": "FAQ",
+        "path": "/Applications/FAQ"
+      }
+    ]
+  }
+]
